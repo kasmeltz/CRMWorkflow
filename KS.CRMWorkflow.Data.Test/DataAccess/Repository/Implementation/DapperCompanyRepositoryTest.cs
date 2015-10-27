@@ -108,7 +108,7 @@ namespace RDD.SalesTracker.Data.Test.DataAccess.Repository.Implementation
             try
             {
                 // Act
-                company3.Name = "Bucaramunga";
+                company3.Name = "Pepsi";
                 repository.Update(company3).Wait();
             }
             catch (AggregateException)
