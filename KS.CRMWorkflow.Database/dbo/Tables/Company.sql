@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Company]
+(
+	[Id] INT NOT NULL IDENTITY,
+	PRIMARY KEY CLUSTERED ([Id] ASC)
+)

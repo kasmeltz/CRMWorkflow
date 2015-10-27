@@ -1,0 +1,21 @@
+{
+    "environmentSettings": {
+        "webSite": {
+            "name": "KSCRMWorkflowWebAPI5167",
+            "location": "South Central US"
+        },
+        "databases": [
+            {
+                "connectionStringName": "DefaultConnection",
+                "databaseName": "KSCRMWorkflowWebAPI5167_db",
+                "serverName": "qshx1e9y8q",
+                "user": "kasmeltz",
+                "password": "",
+                "edition": "",
+                "size": "",
+                "collation": "",
+                "location": "South Central US"
+            }
+        ]
+    }
+}

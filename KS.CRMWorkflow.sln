@@ -5,6 +5,31 @@ VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KS.CRMWorkflow.Admin.WPF", "KS.CRMWorkflow.Admin.WPF\KS.CRMWorkflow.Admin.WPF.csproj", "{87F72EDB-202F-40F3-A2E2-D19733AE76CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KS.CRMWorkflow.Component", "KS.CRMWorkflow.Component\KS.CRMWorkflow.Component.csproj", "{E3684BFC-0942-470F-83B7-3A6AE61792AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KS.CRMWorkflow.Data", "KS.CRMWorkflow.Data\KS.CRMWorkflow.Data.csproj", "{B2876FB2-8A23-4156-A6C5-64EA1A4DCFA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KS.CRMWorkflow.Data.Test", "KS.CRMWorkflow.Data.Test\KS.CRMWorkflow.Data.Test.csproj", "{76B9D6B7-9DB0-43A1-A7A3-23B8465FBB21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KS.CRMWorkflow.Logic", "KS.CRMWorkflow.Logic\KS.CRMWorkflow.Logic.csproj", "{A90E29FC-A17F-425E-87A9-520878758C3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KS.CRMWorkflow.Logic.Test", "KS.CRMWorkflow.Logic.Test\KS.CRMWorkflow.Logic.Test.csproj", "{3A14E2C9-683B-4364-83F8-7F84E2B0AF75}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "KS.CRMWorkflow.Database", "KS.CRMWorkflow.Database\KS.CRMWorkflow.Database.sqlproj", "{942EC248-08DF-4627-A17F-2A31748A5EE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KS.CRMWorkflow.WebAPI", "KS.CRMWorkflow.WebAPI\KS.CRMWorkflow.WebAPI.csproj", "{DB9AD697-CB65-4BE8-8FD6-189FE326F314}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{28EA8DE1-B97D-4E15-8DE9-D5CBC6E5EC3E}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{AB5C87EE-303C-45D4-BAF4-E91336F35B3B}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\KSCRMWorkflowWebAPI-WAWS-dev.json = PublishScripts\Configurations\KSCRMWorkflowWebAPI-WAWS-dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +40,41 @@ Global
 		{87F72EDB-202F-40F3-A2E2-D19733AE76CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87F72EDB-202F-40F3-A2E2-D19733AE76CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87F72EDB-202F-40F3-A2E2-D19733AE76CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3684BFC-0942-470F-83B7-3A6AE61792AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3684BFC-0942-470F-83B7-3A6AE61792AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3684BFC-0942-470F-83B7-3A6AE61792AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3684BFC-0942-470F-83B7-3A6AE61792AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2876FB2-8A23-4156-A6C5-64EA1A4DCFA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2876FB2-8A23-4156-A6C5-64EA1A4DCFA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2876FB2-8A23-4156-A6C5-64EA1A4DCFA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2876FB2-8A23-4156-A6C5-64EA1A4DCFA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76B9D6B7-9DB0-43A1-A7A3-23B8465FBB21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B9D6B7-9DB0-43A1-A7A3-23B8465FBB21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76B9D6B7-9DB0-43A1-A7A3-23B8465FBB21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76B9D6B7-9DB0-43A1-A7A3-23B8465FBB21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A90E29FC-A17F-425E-87A9-520878758C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90E29FC-A17F-425E-87A9-520878758C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90E29FC-A17F-425E-87A9-520878758C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90E29FC-A17F-425E-87A9-520878758C3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A14E2C9-683B-4364-83F8-7F84E2B0AF75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A14E2C9-683B-4364-83F8-7F84E2B0AF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A14E2C9-683B-4364-83F8-7F84E2B0AF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A14E2C9-683B-4364-83F8-7F84E2B0AF75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{942EC248-08DF-4627-A17F-2A31748A5EE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{942EC248-08DF-4627-A17F-2A31748A5EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{942EC248-08DF-4627-A17F-2A31748A5EE8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{942EC248-08DF-4627-A17F-2A31748A5EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{942EC248-08DF-4627-A17F-2A31748A5EE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{942EC248-08DF-4627-A17F-2A31748A5EE8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DB9AD697-CB65-4BE8-8FD6-189FE326F314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB9AD697-CB65-4BE8-8FD6-189FE326F314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB9AD697-CB65-4BE8-8FD6-189FE326F314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB9AD697-CB65-4BE8-8FD6-189FE326F314}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AB5C87EE-303C-45D4-BAF4-E91336F35B3B} = {28EA8DE1-B97D-4E15-8DE9-D5CBC6E5EC3E}
 	EndGlobalSection
 EndGlobal
