@@ -64,7 +64,7 @@
     <Build Include="dbo\Tables\Company.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="RDD.SalesTracker.Database.KEV_LOCAL.publish.xml" />
-    <None Include="RDD.SalesTracker.Database.KEV_LOCAL_TEST.publish.xml" />
+    <None Include="KS.CRMWorkflow.Database.KEV_LOCAL.publish.xml" />
+    <None Include="KS.CRMWorkflow.Database.KEV_LOCAL_TEST.publish.xml" />
   </ItemGroup>
 </Project>
