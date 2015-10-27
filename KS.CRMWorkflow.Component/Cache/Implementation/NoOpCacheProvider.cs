@@ -1,7 +1,7 @@
-﻿using RDD.SalesTracker.Component.Cache.Interface;
+﻿using KS.CRMWorkflow.Component.Cache.Interface;
 using System;
 
-namespace RDD.SalesTracker.Component.Cache.Implementation
+namespace KS.CRMWorkflow.Component.Cache.Implementation
 {
     /// <summary>
     /// Represents an item that doesn't actually cache anything. 
