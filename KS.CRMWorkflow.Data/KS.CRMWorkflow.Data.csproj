@@ -30,7 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=1.40.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.42\lib\net45\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,7 +45,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\Exceptions\ActionNotSupportedException.cs" />
+    <Compile Include="DataAccess\Exceptions\ItemAlreadyExistsException.cs" />
+    <Compile Include="DataAccess\Repository\Implementation\BaseDapperRepository.cs" />
+    <Compile Include="DataAccess\Repository\Implementation\DapperCompanyRepository.cs" />
+    <Compile Include="DataAccess\Repository\Implementation\DapperRepositoryCollection.cs" />
+    <Compile Include="DataAccess\Repository\Implementation\SqlConnectionManager.cs" />
+    <Compile Include="DataAccess\Repository\Interface\ICiudadRepository.cs" />
+    <Compile Include="DataAccess\Repository\Interface\IDataRepository.cs" />
+    <Compile Include="DataAccess\Repository\Interface\IRepositoryCollection.cs" />
+    <Compile Include="POCO\Company.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\KS.CRMWorkflow.Component\KS.CRMWorkflow.Component.csproj">
+      <Project>{e3684bfc-0942-470f-83b7-3a6ae61792af}</Project>
+      <Name>KS.CRMWorkflow.Component</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

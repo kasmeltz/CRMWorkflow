@@ -50,7 +50,22 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="DataAccess\Repository\Implementation\DapperCompanyRepositoryTest.cs" />
+    <Compile Include="DataAccess\Repository\Implementation\RepositoryTestHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KS.CRMWorkflow.Component\KS.CRMWorkflow.Component.csproj">
+      <Project>{e3684bfc-0942-470f-83b7-3a6ae61792af}</Project>
+      <Name>KS.CRMWorkflow.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KS.CRMWorkflow.Data\KS.CRMWorkflow.Data.csproj">
+      <Project>{b2876fb2-8a23-4156-a6c5-64ea1a4dcfa8}</Project>
+      <Name>KS.CRMWorkflow.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
